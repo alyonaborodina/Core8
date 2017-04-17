@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@section header{
+    <div class="view">
+        @foreach (string str in new[] { "About  ", "Contact ", "Index" })
+        {
+            @Html.ActionLink(str, str, null, new { style = "margin: 5px" })
+        }
+    </div>
+}
+
+@section SectionTest{
+    <div class="view">
+        <p>Приложение создано в 2017 году</p>
+    </div>
+}
+
+@section dateTime{
+    <div id="date"></div>
+}
